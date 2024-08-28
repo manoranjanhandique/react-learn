@@ -23,3 +23,41 @@
         because `class` is a reserve word in JavaScript.
     JSX- whenever we write attributes in JSX we have to write in camelCase.
     JSX- whenever we write multiple line in Jsx we need to wrap inside first brackets (), so Babel will understand where jsx is start and where it end.
+#React Component
+    Class based Component 
+        Old way writing code
+    Functional Component
+        New way of writing code
+        its just a normal java script function,but work in isolation and return JSX.
+        for render functional components we wrap inside angular brackets (<functional component/>)
+        inside function using `{ js code }` we can write any javascript code
+    Component composition
+        Component composition in React involves the inclusion of one or more components in a single component.
+        3 way - 
+            `{Heading()}`
+            <Heading/>
+            <Heading></Heading>
+    Props - stands for properties.
+        Props are arguments passed into React components.
+        Props are passed to components via HTML attributes.
+        Props are like function arguments in JavaScript and attributes in HTML.
+    Key
+        Whenever we loop in data for component and props its best practice to use unique key.
+    Config Driven UI
+        -
+    Why do we use React?
+        we chose React because it enhances our developer experience, making it more seamless and efficient.
+        React render cycle is very fast.
+    Two types of export/import in React
+        1.Default export/import.
+            export default Header;
+            import Header from "./components/Header"
+        2.Named export/import.
+            export const ComponentName=>()={....}
+            import { ComponentName } from "../path"
+    What is Hook ?
+        React Hooks are functions that allow you to use state and other React features in functional components.
+    Two crucial hooks we frequently utilize are:
+        1. useState()
+        2. useEffect()
+#React fiber - Reconciliation - "diffing" algorithm
