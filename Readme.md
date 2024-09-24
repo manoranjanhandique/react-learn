@@ -61,3 +61,22 @@
         1. useState()
         2. useEffect()
 #React fiber - Reconciliation - "diffing" algorithm
+    #useEffect()
+        syntax - `useEffect(()=>{},[])` // (CB, dependencyArr)
+        -useEffect call back function will be call after component renders.
+        -if no dependencyArr then useEffect is call on every rendering.
+        -if dependencyArr is empty ->[]->useEffect is called om initial render (just once)
+        -whenever state variable change react re render the components.(useState)
+        -`whenever state variable update, React trigger a reReconciliation cycle (re-render the components)`
+
+#Class based component
+    - Class Components are the reusable code blocks or classes that extends the React.Component
+    - Syntax `class app extent React.Component{ render(){ return //code }}`
+    - for receiving props 
+        - we use constructor class
+            constructor(props){
+                super(props);
+            }
+        - now component can access it with `this.props`
+        - loading class based component to the web page means creating a instance of this class to them
+        - best practice use state variable inside constructor
